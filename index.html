@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HTML5 Desktop built with WinBox.js</title>
+</head>
+<body>
+<script src="https://nextapps-de.github.io/winbox/dist/js/winbox.min.js"></script>
+<link rel="stylesheet" href="https://nextapps-de.github.io/winbox/dist/css/themes/modern.min.css"></link>
+<style>
+body {
+background-color: black;
+color: white;
+</style>
+<script>
+function notepad(){
+new WinBox("Notepad", {
+
+    url: "/notepad.html"
+});
+}
+function paint(){
+new WinBox("Paint", {
+
+    url: "/paint.html"
+});
+}
+
+function appstore(){
+new WinBox("App Store", {
+
+    url: "https://ufreegames.com"
+});
+}
+function browser(){
+new WinBox("Web Browser", {
+
+    url: "https://www.google.com/webhp?igu=1"
+});
+}
+function info(){
+alert("I am a desktop environment developer that develops desktop environments for web browsers!");
+alert("I also work on new apps for this Desktop Environment!");
+}
+function console(){
+new WinBox("Terminal", {
+
+    url: "https://www.jdoodle.com/test-bash-shell-script-online"
+});
+}
+</script>
+<button onclick="notepad();">Notepad</button>
+<button onclick="paint();">Paint</button>
+<button onclick="appstore();">App Store</button>
+<button onclick="browser();">Web Browser</button>
+<button onclick="info();">Info about me! =)</button>
+</body>
+</html>
