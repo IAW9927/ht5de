@@ -12,20 +12,34 @@ background-color: black;
 color: white;
 </style>
 <script>
+    function notepad(){
 new WinBox("Notepad", {
 
     url: "notepad.html"
 });
+    }
+    function paint(){
 new WinBox("Paint", {
 
     url: "paint.html"
 });
+    }
+    function web(){
 new WinBox("Web Browser", {
 
     url: "https://www.google.com/webhp?igu=1"
 });
-alert("I am a desktop environment developer that develops desktop environments for web browsers!");
-alert("I also work on new apps for this Desktop Environment!");
+    }
+    function appstore(){
+        new WinBox("App Store", {
+
+    url: "https://itch.io/games/html5"
+});
+    }
 </script>
+    <button onclick="notepad();">Notepad</button>
+    <button onclick="paint();">Paint</button>
+    <button onclick="web();">Web Browser</button>
+    <button onclick="appstore();">App Store</button>
 </body>
 </html>
